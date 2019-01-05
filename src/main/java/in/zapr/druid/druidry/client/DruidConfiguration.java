@@ -1,3 +1,19 @@
+/*
+ * Copyright 2018-present Red Brick Lane Marketing Solutions Pvt. Ltd.
+ *
+ * Licensed under the Apache License, Version 2.0 (the "License");
+ * you may not use this file except in compliance with the License.
+ * You may obtain a copy of the License at
+ *
+ *     http://www.apache.org/licenses/LICENSE-2.0
+ *
+ * Unless required by applicable law or agreed to in writing, software
+ * distributed under the License is distributed on an "AS IS" BASIS,
+ * WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+ * See the License for the specific language governing permissions and
+ * limitations under the License.
+ */
+
 package in.zapr.druid.druidry.client;
 
 import org.apache.commons.lang3.StringUtils;
@@ -14,8 +30,7 @@ public class DruidConfiguration {
     private static final int DEFAULT_HTTPS_PORT = 8282;
 
     /**
-     * Protocol by which Druid Broker is accessible
-     * Defaults to HTTP
+     * Protocol by which Druid Broker is accessible Defaults to HTTP
      */
     private DruidQueryProtocol protocol;
 
@@ -25,8 +40,7 @@ public class DruidConfiguration {
     private String host;
 
     /**
-     * Port at which Druid Broker is listening.
-     * {@value DEFAULT_HTTP_PORT} if protocol is 8082
+     * Port at which Druid Broker is listening. {@value DEFAULT_HTTP_PORT} if protocol is 8082
      * {@value DEFAULT_HTTPS_PORT} if protocol is 8282
      */
     private Integer port;
@@ -37,8 +51,8 @@ public class DruidConfiguration {
     private String endpoint;
 
     /**
-     * Number of connections to be maintained in connection pool
-     * Is Ignored when custom JerseyConfig is passed.
+     * Number of connections to be maintained in connection pool Is Ignored when custom JerseyConfig
+     * is passed.
      */
     private Integer concurrentConnectionsRequired;
 
